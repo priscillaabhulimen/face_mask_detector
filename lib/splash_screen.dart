@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class MySplashPage extends StatefulWidget {
-  const MySplashPage({Key? key}) : super(key: key);
+  const MySplashPage({Key key}) : super(key: key);
 
   @override
   _MySplashPageState createState() => _MySplashPageState();
