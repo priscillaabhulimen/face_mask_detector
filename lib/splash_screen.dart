@@ -1,4 +1,6 @@
+import 'package:face_mask_detection/home.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class MySplashPage extends StatefulWidget {
@@ -14,8 +16,25 @@ class _MySplashPageState extends State<MySplashPage> {
     return SplashScreen(
       seconds: 15,
       title: Text(
-        'Face Mask Detector'
+        'Face Mask Detector',
+        style: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: Colors.black
+        ),
       ),
+      image: Image.asset('assets/splash.png'),
+      photoSize: 120,
+      backgroundColor: Colors.white,
+      loaderColor: Colors.black,
+      loadingText: Text(
+        'from CodedX',
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 14
+        ),
+      ),
+      navigateAfterSeconds: HomePage(),
     );
   }
 }
